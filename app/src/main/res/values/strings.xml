@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mobile</string>
+    <string name="state">State</string>
+    <string name="aadhar">Aadhar</string>
+    <string name="imei">IMEI</string>
+    <string name="name">name</string>
+    <string name="adrs1">Address1</string>
+    <string name="adrs2">Address2</string>
+    <string name="dist">District</string>
+    <string name="submit">Submit</string>
+</resources>
