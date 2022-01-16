@@ -66,19 +66,30 @@ class SaleActivity:BaseActivity(), View.OnClickListener {
         var  filepath1 = getFilesDir().toString() + "/" + "pic1" + ".jpg";
         var file1 = File(filepath1)
 
+
+        var  filepath2 = getFilesDir().toString() + "/" + "profile" + ".jpg";
+        var file2 = File(filepath2)
+
         var requestBody = RequestBody.create("image/*".toMediaTypeOrNull(), file);
         var part = MultipartBody.Part.createFormData("bill", file.getName(), requestBody);
 
         var requestBody1 = RequestBody.create("image/*".toMediaTypeOrNull(), file1);
         var part1 = MultipartBody.Part.createFormData("bill1", file1.getName(), requestBody1);
 
-        var by = RequestBody.create("text/plain".toMediaTypeOrNull(), "favas");
-        var fname0 = RequestBody.create("text/plain".toMediaTypeOrNull(), "pic0.jpg");
+        var requestBody2 = RequestBody.create("image/*".toMediaTypeOrNull(), file2);
+        var part2 = MultipartBody.Part.createFormData("bill2", file2.getName(), requestBody2);
+
+        var name = RequestBody.create("text/plain".toMediaTypeOrNull(), "favas");
+        var ad1 = RequestBody.create("text/plain".toMediaTypeOrNull(), "tk hose");
+        var imei = RequestBody.create("text/plain".toMediaTypeOrNull(), "123456789012345");
+        var ad_no = RequestBody.create("text/plain".toMediaTypeOrNull(), "123456789012");
+        var apikey = RequestBody.create("text/plain".toMediaTypeOrNull(), "200");
+       // var fname0 = RequestBody.create("text/plain".toMediaTypeOrNull(), "pic0.jpg");
 
 
 
         val apiService = ApiClient.getClient(Endpoint::class.java)
-        var call = apiService.save_data_with_pics(part,part1,fname0, by, by, by,by)
+        var call = apiService.save_data_with_pics(part,part1,part2,name, ad1, imei, ad_no,apikey)
 
 
 
@@ -92,12 +103,18 @@ class SaleActivity:BaseActivity(), View.OnClickListener {
             ) {
                 pb1.visibility=View.INVISIBLE
                 Log.d("result","ok")
-                if (response.body()?.message.equals("ok")) {
+                if (response.body()?.result.equals("1")) {
+
+                    Toast.makeText(applicationContext,response.body()?.message,Toast.LENGTH_LONG).show()
+
+                    pic0.setImageResource(R.drawable.id1)
+                    pic1.setImageResource(R.drawable.id2)
+                    imgAvatar.setImageResource(R.drawable.no_user_image_signup)
 
                 }
                 else
                 {
-
+                    Toast.makeText(applicationContext,R.string.som_wrong,Toast.LENGTH_LONG).show()
                 }
 
 

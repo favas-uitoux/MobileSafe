@@ -14,11 +14,12 @@ interface Endpoint {
     fun save_data_with_pics(
         @Part part:MultipartBody.Part?,
         @Part part2:MultipartBody.Part?,
-        @Part("fname0") fname0: RequestBody?,
-        @Part("na") name: RequestBody?,
+        @Part part3:MultipartBody.Part?,
+        @Part("name") name: RequestBody?,
         @Part("ad1") ad1: RequestBody?,
-        @Part("ad2") ad2: RequestBody?,
-        @Part("dist") dist: RequestBody?
+        @Part("imei") imei: RequestBody?,
+        @Part("ad_no") ad_no: RequestBody?,
+        @Part("apikey") apikey: RequestBody?
     ): Call<ResponseModel1>
 
 

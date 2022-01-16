@@ -7,5 +7,12 @@ data class ResponseModel1(
 
 
 	@field:SerializedName("message")
-	val message: String? = null
+	val message: String? = null,
+
+	@field:SerializedName("slno")
+val slno: String? = null,
+
+	@field:SerializedName("result")
+	val result: String? = null
+
 )

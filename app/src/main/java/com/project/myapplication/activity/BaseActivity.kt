@@ -49,7 +49,7 @@ public fun saveReceivedImage(bitmap:Bitmap,imageName:String)
            var destn = fname
             var uCrop = UCrop.of(uri, Uri.fromFile(File(cacheDir, destn)))
             uCrop.withAspectRatio(1f, 1f)
-            uCrop.withMaxResultSize(350, 350)
+            uCrop.withMaxResultSize(750, 750)
             uCrop.withOptions(getoptions())
             uCrop.start(this@BaseActivity)
         }
