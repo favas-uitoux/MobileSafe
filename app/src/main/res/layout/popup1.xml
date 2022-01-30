@@ -20,7 +20,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@color/colorOrange_new"
+            android:src="@color/green"
             />
 
 
@@ -43,7 +43,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@color/colorPrimaryDark"
+            android:src="@color/black"
             />
 
 

@@ -9,4 +9,13 @@
     <string name="dist">District</string>
     <string name="submit">Submit</string>
     <string name="som_wrong">Something went Wrong</string>
+    <string name="sales">Sales</string>
+    <string name="purchase">Purchase</string>
+    <string name="shop">Shop name</string>
+    <string name="plac">Place</string>
+    <string name="pin">Pincode</string>
+    <string name="lic">License</string>
+    <string name="mob">"Mobile "</string>
+    <string name="pswd">Password</string>
+    <string name="login">Login</string>
 </resources>

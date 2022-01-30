@@ -1,56 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:keepScreenOn="true"
-    >
-
+    android:keepScreenOn="true">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp">
 
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgAvatar"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:focusable="false"
-            android:src="@drawable/no_user_image_signup"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-
+        android:layout_marginEnd="5dp"
+        android:background="@color/white">
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtName"
+            android:id="@+id/txtShop"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/imgAvatar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="5dp"
+            android:hint="@string/shop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
 
-            android:hint="@string/name">
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -64,132 +41,126 @@
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/txtAd1"
+            android:id="@+id/txtPlace"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/txtName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="5dp"
-            android:hint="@string/adrs1">
+            android:hint="@string/plac"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtShop">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:singleLine="true"
-                />
+                android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/txtAd2"
+            android:id="@+id/txtPin"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/txtAd1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="5dp"
-            android:hint="@string/adrs2">
+            android:hint="@string/pin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPlace">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:singleLine="true"
-                />
+                android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/txtDist"
+            android:id="@+id/txtLic"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/txtAd2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="5dp"
-            android:hint="@string/dist">
+            android:hint="@string/lic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPin">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:singleLine="true"
-                />
+                android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/txtState"
+            android:id="@+id/txtMob"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/txtDist"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="5dp"
+            android:hint="@string/mob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
 
-            android:hint="@string/state">
+            app:layout_constraintTop_toBottomOf="@+id/txtLic">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:singleLine="true"
-                />
+                android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/txtAadhar"
+            android:id="@+id/txtPswd"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/txtState"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="5dp"
+            android:hint="@string/pswd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
 
-            android:hint="@string/aadhar">
+            app:layout_constraintTop_toBottomOf="@+id/txtMob">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:singleLine="true"
-                />
+                android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/txtimei"
+            android:id="@+id/txtConfPswd"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/txtAadhar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="5dp"
+            android:hint="@string/pswd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
 
-            android:hint="@string/imei">
+            app:layout_constraintTop_toBottomOf="@+id/txtPswd">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
                 android:maxLines="1"
-
-                />
+                android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -197,67 +168,19 @@
 
 
 
-        <ImageView
-            android:id="@+id/pic0"
-
-            android:layout_width="163dp"
-            android:layout_height="85dp"
-
-            android:contentDescription="@string/app_name"
-            android:focusable="false"
-
-
-            android:src="@drawable/id1"
-            app:layout_constraintEnd_toStartOf="@+id/pic1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtimei"
-
-            android:layout_marginTop="25dp"
-
-
-
-            />
-
-
-
-
-
-
-
-        <ImageView
-            android:id="@+id/pic1"
-
-            android:layout_width="163dp"
-            android:layout_height="85dp"
-
-            android:contentDescription="@string/app_name"
-            android:focusable="false"
-
-
-            android:src="@drawable/id2"
-
-            app:layout_constraintStart_toEndOf="@+id/pic0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtimei"
-            android:layout_marginTop="25dp"
-
-
-            />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_submit"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/green"
-
-            app:layout_constraintTop_toBottomOf="@+id/pic0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="50dp"
-            >
 
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtConfPswd">
 
 
             <com.project.myapplication.views.TextViewRubikMedium
@@ -276,23 +199,17 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
             <ProgressBar
                 android:id="@+id/pb1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="40dp"
+                android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:visibility="invisible"
-                android:layout_marginEnd="40dp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

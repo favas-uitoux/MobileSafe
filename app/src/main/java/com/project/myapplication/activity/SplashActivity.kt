@@ -133,7 +133,7 @@ class SplashActivity:AppCompatActivity() {
     {
 
       //  Toast.makeText(applicationContext,"next screen", Toast.LENGTH_LONG).show()
-        startActivity(Intent(this@SplashActivity, SaleActivity::class.java))
+        startActivity(Intent(this@SplashActivity, OnBoradingActivity::class.java))
 //        //customType(this@SplashActivity, "fadein-to-fadeout")
         finish()
 
